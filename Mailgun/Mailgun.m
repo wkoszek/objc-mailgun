@@ -26,7 +26,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
     if (self) {
         [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
         [self setDefaultHeader:@"Accept" value:@"application/json"];
-        [self setParameterEncoding:AFJSONParameterEncoding];
+        self.parameterEncoding = AFFormURLParameterEncoding;
     }
     return self;
 }
@@ -69,12 +69,84 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
             success:(void (^)(NSString *messageId))success
             failure:(void (^)(NSError *error))failure {
     AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:[self createSendRequest:message]
-                                                                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                                      success:^(AFHTTPRequestOperation *_operation, id responseObject) {
                                                                           if (success) {
                                                                               success(responseObject[@"id"]);
                                                                           }
                                                                       }
-                                                                      failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                      failure:^(AFHTTPRequestOperation *_operation, NSError *error) {
+                                                                          NSLog(@"%@", error);
+                                                                          if (failure) {
+                                                                              failure(error);
+                                                                          }
+                                                                      }];
+    [self enqueueHTTPRequestOperation:operation];
+}
+
+- (void)checkSubscriptionToList:(NSString *)list
+                        address:(NSString *)emailAddress
+                        success:(void (^)(NSDictionary *member))success
+                        failure:(void (^)(NSError *error))failure {
+    NSString *messagePath = [NSString stringWithFormat:@"lists/%@/%@/%@", list, @"members", emailAddress];
+    NSURLRequest *request = [self requestWithMethod:@"GET"
+                                               path:messagePath
+                                         parameters:nil];
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request
+                                                                      success:^(AFHTTPRequestOperation *_operation, id responseObject) {
+                                                                          if (success) {
+                                                                              success(responseObject);
+                                                                          }
+                                                                      }
+                                                                      failure:^(AFHTTPRequestOperation *_operation, NSError *error) {
+                                                                          NSLog(@"%@", error);
+                                                                          if (failure) {
+                                                                              failure(error);
+                                                                          }
+                                                                      }];
+    [self enqueueHTTPRequestOperation:operation];
+}
+
+- (void)unsubscribeToList:(NSString *)list
+                  address:(NSString *)emailAddress
+                  success:(void (^)())success
+                  failure:(void (^)(NSError *error))failure {
+    NSString *messagePath = [NSString stringWithFormat:@"lists/%@/%@/%@", list, @"members", emailAddress];
+    NSURLRequest *request = [self requestWithMethod:@"DELETE"
+                                               path:messagePath
+                                         parameters:nil];
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request
+                                                                      success:^(AFHTTPRequestOperation *_operation, id responseObject) {
+                                                                          if (success) {
+                                                                              success();
+                                                                          }
+                                                                      }
+                                                                      failure:^(AFHTTPRequestOperation *_operation, NSError *error) {
+                                                                          NSLog(@"%@", error);
+                                                                          if (failure) {
+                                                                              failure(error);
+                                                                          }
+                                                                      }];
+    [self enqueueHTTPRequestOperation:operation];
+}
+
+- (void)subscribeToList:(NSString *)list 
+                address:(NSString *)emailAddress
+                success:(void (^)())success
+                failure:(void (^)(NSError *error))failure {
+    NSString *messagePath = [NSString stringWithFormat:@"lists/%@/%@", list, @"members"];
+    NSDictionary *params = @{@"address": emailAddress,
+                             @"subscribed": @"yes",
+                             @"upsert": @"yes"};
+    NSURLRequest *request = [self requestWithMethod:@"POST"
+                                               path:messagePath
+                                         parameters:params];
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request
+                                                                      success:^(AFHTTPRequestOperation *_operation, id responseObject) {
+                                                                          if (success) {
+                                                                              success();
+                                                                          }
+                                                                      }
+                                                                      failure:^(AFHTTPRequestOperation *_operation, NSError *error) {
                                                                           NSLog(@"%@", error);
                                                                           if (failure) {
                                                                               failure(error);

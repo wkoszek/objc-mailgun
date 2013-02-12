@@ -34,4 +34,16 @@
 - (void)sendMessage:(MGMessage *)message;
 - (void)sendMessage:(MGMessage *)message success:(void (^)(NSString *messageId))success failure:(void (^)(NSError *error))failure;
 
+- (void)checkSubscriptionToList:(NSString *)list
+                        address:(NSString *)emailAddress
+                        success:(void (^)(NSDictionary *member))success
+                        failure:(void (^)(NSError *error))failure;
+- (void)unsubscribeToList:(NSString *)list
+                  address:(NSString *)emailAddress
+                  success:(void (^)())success
+                  failure:(void (^)(NSError *error))failure;
+- (void)subscribeToList:(NSString *)list 
+                address:(NSString *)emailAddress
+                success:(void (^)())success
+                failure:(void (^)(NSError *error))failure;
 @end
