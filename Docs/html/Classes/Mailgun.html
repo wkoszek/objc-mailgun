@@ -1,0 +1,1071 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Mailgun Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Mailgun SDK </a></h1>
+				<a id="developerHome" href="../index.html">Rackspace Hosting</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Mailgun Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/apiKey">&nbsp;&nbsp;&nbsp;&nbsp;apiKey</option>
+	
+	<option value="//api/name/domain">&nbsp;&nbsp;&nbsp;&nbsp;domain</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/client">&nbsp;&nbsp;&nbsp;&nbsp;+ client</option>
+	
+	<option value="//api/name/clientWithDomain:apiKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ clientWithDomain:apiKey:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/checkSubscriptionToList:email:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- checkSubscriptionToList:email:success:failure:</option>
+	
+	<option value="//api/name/sendMessage:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessage:</option>
+	
+	<option value="//api/name/sendMessage:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessage:success:failure:</option>
+	
+	<option value="//api/name/sendMessageTo:from:subject:body:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessageTo:from:subject:body:</option>
+	
+	<option value="//api/name/sendMessageTo:from:subject:body:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessageTo:from:subject:body:success:failure:</option>
+	
+	<option value="//api/name/subscribeToList:email:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeToList:email:success:failure:</option>
+	
+	<option value="//api/name/unsubscribeToList:email:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- unsubscribeToList:email:success:failure:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Mailgun Client Setup">Mailgun Client Setup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Initializing the Mailgun Client">Creating and Initializing the Mailgun Client</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending a Previously Constructed Mailgun Message">Sending a Previously Constructed Mailgun Message</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sending an Ad-Hoc Mailgun Message">Sending an Ad-Hoc Mailgun Message</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Checking Mailing List Subscription">Checking Mailing List Subscription</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribing/Unsubscribing to Mailing Lists">Subscribing/Unsubscribing to Mailing Lists</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/apiKey">apiKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/domain">domain</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/client">client</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clientWithDomain:apiKey:">clientWithDomain:apiKey:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkSubscriptionToList:email:success:failure:">checkSubscriptionToList:email:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessage:">sendMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessage:success:failure:">sendMessage:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessageTo:from:subject:body:">sendMessageTo:from:subject:body:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessageTo:from:subject:body:success:failure:">sendMessageTo:from:subject:body:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeToList:email:success:failure:">subscribeToList:email:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsubscribeToList:email:success:failure:">unsubscribeToList:email:success:failure:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Mailgun Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Mailgun Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">AFHTTPClient</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Mailgun.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The Mailgun SDK allows your Mac OS X or iOS application to connect with the <a href="http://www.mailgun.com">Mailgun</a> programmable email platform. Send and manage mailing list subscriptions from your desktop or mobile applications and connect with your users directly in your application.</p>
+
+<p><em>Requirements</em> The AFNetworking library is required for the <code>Mailgun</code> <a href="#//api/name/client">client</a> library.</p>
+
+<h2>Easy Image Attaching</h2>
+
+<p>Using <a href="../Classes/MGMessage.html">MGMessage</a> will allow you to attach <code>UIImage</code> or <code>NSImage</code> instances to a message. It will handle converting the image for you and attaching it either inline or to the message header.</p>
+
+<h2>This SDK is not 1:1 to the REST API</h2>
+
+<p>At this time the full Mailgun REST API is not supported. Currently support is only provided to send messages, subscribe/unsubscribe from mailing lists and to check mailing lists subscriptions.</p>
+
+<p><em>Note</em> These features may be implemented at a later date.</p>
+
+<h2>Sending Example</h2>
+
+<pre><code> Mailgun *mailgun = [Mailgun clientWithDomain:@"samples.mailgun.org" apiKey:@"key-3ax6xnjp29jd6fds4gc373sgvjxteol0"];  
+ [mailgun sendMessageTo:@"Jay Baird &lt;jay.baird@rackspace.com&gt;"   
+                   from:@"Excited User &lt;someone@sample.org&gt;"   
+                subject:@"Mailgun is awesome!"   
+                   body:@"A unicode snowman for you! ☃"];  
+</code></pre>
+
+<h2>Installing</h2>
+
+<ol>
+<li><p>Install via Cocoapods</p>
+
+<p>  pod install mailgun</p></li>
+<li><p>Install via Source</p>
+
+<ol>
+<li>Clone the repository.</li>
+<li>Copy Mailgun.h/.m and <a href="../Classes/MGMessage.html">MGMessage</a>.h/.m to your project.</li>
+<li>There&rsquo;s no step three!</li>
+</ol>
+</li>
+</ol>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Mailgun Client Setup" name="task_Mailgun Client Setup"></a>
+						<h3 class="subsubtitle task-title">Mailgun Client Setup</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/apiKey">&nbsp;&nbsp;apiKey</a></code>
+		<span class="tooltip"><p>Returns the value for the HTTP headers set in request objects created by the HTTP <a href="#//api/name/client">client</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/domain">&nbsp;&nbsp;domain</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating and Initializing the Mailgun Client" name="task_Creating and Initializing the Mailgun Client"></a>
+						<h3 class="subsubtitle task-title">Creating and Initializing the Mailgun Client</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/client">+&nbsp;client</a></code>
+		<span class="tooltip"><p>Creates and initializes an <code>Mailgun</code> object with the specified.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clientWithDomain:apiKey:">+&nbsp;clientWithDomain:apiKey:</a></code>
+		<span class="tooltip"><p>Creates and initializes an <code>Mailgun</code> object with the <a href="#//api/name/domain">domain</a> and api key specified.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Sending a Previously Constructed Mailgun Message" name="task_Sending a Previously Constructed Mailgun Message"></a>
+						<h3 class="subsubtitle task-title">Sending a Previously Constructed Mailgun Message</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessage:">&ndash;&nbsp;sendMessage:</a></code>
+		<span class="tooltip"><p>Sends a previously constructed <a href="../Classes/MGMessage.html">MGMessage</a> without success or failure blocks.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessage:success:failure:">&ndash;&nbsp;sendMessage:success:failure:</a></code>
+		<span class="tooltip"><p>Sends a previously constructed <a href="../Classes/MGMessage.html">MGMessage</a> with the provided success and failure blocks.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Sending an Ad-Hoc Mailgun Message" name="task_Sending an Ad-Hoc Mailgun Message"></a>
+						<h3 class="subsubtitle task-title">Sending an Ad-Hoc Mailgun Message</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessageTo:from:subject:body:">&ndash;&nbsp;sendMessageTo:from:subject:body:</a></code>
+		<span class="tooltip"><p>Sends a simple message without success or failure blocks.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessageTo:from:subject:body:success:failure:">&ndash;&nbsp;sendMessageTo:from:subject:body:success:failure:</a></code>
+		<span class="tooltip"><p>Sends a simple message with success or failure blocks.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Checking Mailing List Subscription" name="task_Checking Mailing List Subscription"></a>
+						<h3 class="subsubtitle task-title">Checking Mailing List Subscription</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkSubscriptionToList:email:success:failure:">&ndash;&nbsp;checkSubscriptionToList:email:success:failure:</a></code>
+		<span class="tooltip"><p>Checks if the given email address is a current subscriber to the specified mailing list.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribing/Unsubscribing to Mailing Lists" name="task_Subscribing/Unsubscribing to Mailing Lists"></a>
+						<h3 class="subsubtitle task-title">Subscribing/Unsubscribing to Mailing Lists</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsubscribeToList:email:success:failure:">&ndash;&nbsp;unsubscribeToList:email:success:failure:</a></code>
+		<span class="tooltip"><p>Unsubscribes the given email address to the specified mailing list.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeToList:email:success:failure:">&ndash;&nbsp;subscribeToList:email:success:failure:</a></code>
+		<span class="tooltip"><p>Subscribes the given email address to the specified mailing list.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/apiKey" title="apiKey"></a>
+	<h3 class="subsubtitle method-title">apiKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the value for the HTTP headers set in request objects created by the HTTP <a href="#//api/name/client">client</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *apiKey</code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>header</em></dt>
+			<dd><p>The HTTP header to return the default value for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The default value for the HTTP header, or <code>nil</code> if unspecified</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/domain" title="domain"></a>
+	<h3 class="subsubtitle method-title">domain</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *domain</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/client" title="client"></a>
+	<h3 class="subsubtitle method-title">client</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and initializes an <code>Mailgun</code> object with the specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)client</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly-initialized Mailgun client</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<blockquote><p>%warning%<br/>
+<strong>Warning:</strong> <em>Important:</em> You will need to set a <a href="#//api/name/domain">domain</a> and an API key on this object after creation in order to use the client.</p></blockquote>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clientWithDomain:apiKey:" title="clientWithDomain:apiKey:"></a>
+	<h3 class="subsubtitle method-title">clientWithDomain:apiKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and initializes an <code>Mailgun</code> object with the <a href="#//api/name/domain">domain</a> and api key specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)clientWithDomain:(NSString *)<em>domain</em> apiKey:(NSString *)<em>apiKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>domain</em></dt>
+			<dd><p>The <a href="#//api/name/domain">domain</a> for this <a href="#//api/name/client">client</a>. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>apiKey</em></dt>
+			<dd><p>The API key for your Mailgun account. Must not be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly-initialized Mailgun <a href="#//api/name/client">client</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/checkSubscriptionToList:email:success:failure:" title="checkSubscriptionToList:email:success:failure:"></a>
+	<h3 class="subsubtitle method-title">checkSubscriptionToList:email:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if the given email address is a current subscriber to the specified mailing list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)checkSubscriptionToList:(NSString *)<em>list</em> email:(NSString *)<em>emailAddress</em> success:(void ( ^ ) ( NSDictionary *member ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>list</em></dt>
+			<dd><p>The mailing list to check for the provided email address. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>emailAddress</em></dt>
+			<dd><p>Email address to check for list membership. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block called when the email address is found as a subscriber to <code>list</code>, called with a <code>NSDictionary</code> of member information.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block called when the email address is not found as a subscriber to <code>list</code>. The <code>NSError</code> will be an HTTP 404.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessage:" title="sendMessage:"></a>
+	<h3 class="subsubtitle method-title">sendMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a previously constructed <a href="../Classes/MGMessage.html">MGMessage</a> without success or failure blocks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendMessage:(MGMessage *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The <a href="../Classes/MGMessage.html">MGMessage</a> instance to send.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessage:success:failure:" title="sendMessage:success:failure:"></a>
+	<h3 class="subsubtitle method-title">sendMessage:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a previously constructed <a href="../Classes/MGMessage.html">MGMessage</a> with the provided success and failure blocks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendMessage:(MGMessage *)<em>message</em> success:(void ( ^ ) ( NSString *messageId ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block called when the message is sent successfully called with a parameter <code>NSString</code> of the message id.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block called when the underlying HTTP request fails. It will be called with an <code>NSError</code> set by the underlying <code>AFNetworking</code> <a href="#//api/name/client">client</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessageTo:from:subject:body:" title="sendMessageTo:from:subject:body:"></a>
+	<h3 class="subsubtitle method-title">sendMessageTo:from:subject:body:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a simple message without success or failure blocks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendMessageTo:(NSString *)<em>to</em> from:(NSString *)<em>from</em> subject:(NSString *)<em>subject</em> body:(NSString *)<em>body</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>to</em></dt>
+			<dd><p>The message recipient. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>from</em></dt>
+			<dd><p>The message sender. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subject</em></dt>
+			<dd><p>The message subject. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>The body of the message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessageTo:from:subject:body:success:failure:" title="sendMessageTo:from:subject:body:success:failure:"></a>
+	<h3 class="subsubtitle method-title">sendMessageTo:from:subject:body:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a simple message with success or failure blocks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendMessageTo:(NSString *)<em>to</em> from:(NSString *)<em>from</em> subject:(NSString *)<em>subject</em> body:(NSString *)<em>body</em> success:(void ( ^ ) ( NSString *messageId ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>to</em></dt>
+			<dd><p>The message recipient. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>from</em></dt>
+			<dd><p>The message sender. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subject</em></dt>
+			<dd><p>The message subject. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>The body of the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block called when the message is sent successfully called with a parameter <code>NSString</code> of the message id.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block called when the underlying HTTP request fails. It will be called with an <code>NSError</code> set by the underlying <code>AFNetworking</code> <a href="#//api/name/client">client</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeToList:email:success:failure:" title="subscribeToList:email:success:failure:"></a>
+	<h3 class="subsubtitle method-title">subscribeToList:email:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Subscribes the given email address to the specified mailing list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)subscribeToList:(NSString *)<em>list</em> email:(NSString *)<em>emailAddress</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>list</em></dt>
+			<dd><p>The mailing list to subscribe the provided email address to. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>emailAddress</em></dt>
+			<dd><p>Email address to subscribe. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block called when the email address is successfully subscribed to the mailing list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block called when there is an error subscribing the user to the given mailing list.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unsubscribeToList:email:success:failure:" title="unsubscribeToList:email:success:failure:"></a>
+	<h3 class="subsubtitle method-title">unsubscribeToList:email:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unsubscribes the given email address to the specified mailing list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unsubscribeToList:(NSString *)<em>list</em> email:(NSString *)<em>emailAddress</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>list</em></dt>
+			<dd><p>The mailing list to unsubscribe the given email address from. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>emailAddress</em></dt>
+			<dd><p>Email address to check for list membership. Must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block called when the email address is successfully removed from the mailing list.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block called when the email address is not found as a subscriber to <code>list</code>. The <code>NSError</code> will be an HTTP 404.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Mailgun.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Rackspace Hosting. All rights reserved. (Last updated: 2013-03-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

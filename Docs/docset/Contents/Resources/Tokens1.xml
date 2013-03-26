@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MGMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MGMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setFrom:</TokenIdentifier>
+			<Abstract type="html">Email address for From header</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/from</TokenIdentifier>
+			<Abstract type="html">Email address for From header</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/from</TokenIdentifier>
+			<Abstract type="html">Email address for From header</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *from</Declaration>
+			
+			
+			<Anchor>//api/name/from</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTo:</TokenIdentifier>
+			<Abstract type="html">Email address of the recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *to</Declaration>
+			
+			
+			<Anchor>//api/name/to</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/to</TokenIdentifier>
+			<Abstract type="html">Email address of the recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *to</Declaration>
+			
+			
+			<Anchor>//api/name/to</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/to</TokenIdentifier>
+			<Abstract type="html">Email address of the recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *to</Declaration>
+			
+			
+			<Anchor>//api/name/to</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setCc:</TokenIdentifier>
+			<Abstract type="html">Email address of the CC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *cc</Declaration>
+			
+			
+			<Anchor>//api/name/cc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/cc</TokenIdentifier>
+			<Abstract type="html">Email address of the CC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *cc</Declaration>
+			
+			
+			<Anchor>//api/name/cc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/cc</TokenIdentifier>
+			<Abstract type="html">Email address of the CC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *cc</Declaration>
+			
+			
+			<Anchor>//api/name/cc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setBcc:</TokenIdentifier>
+			<Abstract type="html">Email address of the BCC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *bcc</Declaration>
+			
+			
+			<Anchor>//api/name/bcc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/bcc</TokenIdentifier>
+			<Abstract type="html">Email address of the BCC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *bcc</Declaration>
+			
+			
+			<Anchor>//api/name/bcc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/bcc</TokenIdentifier>
+			<Abstract type="html">Email address of the BCC recipient(s). Example: &quot;Bob &lt;bob@host.com&gt;&quot;.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *bcc</Declaration>
+			
+			
+			<Anchor>//api/name/bcc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setSubject:</TokenIdentifier>
+			<Abstract type="html">Message subject</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/subject</TokenIdentifier>
+			<Abstract type="html">Message subject</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/subject</TokenIdentifier>
+			<Abstract type="html">Message subject</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setText:</TokenIdentifier>
+			<Abstract type="html">Body of the message, text version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/text</TokenIdentifier>
+			<Abstract type="html">Body of the message, text version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/text</TokenIdentifier>
+			<Abstract type="html">Body of the message, text version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setHtml:</TokenIdentifier>
+			<Abstract type="html">Body of the message. HTML version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *html</Declaration>
+			
+			
+			<Anchor>//api/name/html</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/html</TokenIdentifier>
+			<Abstract type="html">Body of the message. HTML version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *html</Declaration>
+			
+			
+			<Anchor>//api/name/html</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/html</TokenIdentifier>
+			<Abstract type="html">Body of the message. HTML version</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *html</Declaration>
+			
+			
+			<Anchor>//api/name/html</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setCampaign:</TokenIdentifier>
+			<Abstract type="html">ID of the campaign the message belongs to. See Campaign Analytics for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *campaign</Declaration>
+			
+			
+			<Anchor>//api/name/campaign</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/campaign</TokenIdentifier>
+			<Abstract type="html">ID of the campaign the message belongs to. See Campaign Analytics for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *campaign</Declaration>
+			
+			
+			<Anchor>//api/name/campaign</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/campaign</TokenIdentifier>
+			<Abstract type="html">ID of the campaign the message belongs to. See Campaign Analytics for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *campaign</Declaration>
+			
+			
+			<Anchor>//api/name/campaign</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTags:</TokenIdentifier>
+			<Abstract type="html">An NSArray of tag strings. See Tagging for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/tags</TokenIdentifier>
+			<Abstract type="html">An NSArray of tag strings. See Tagging for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/tags</TokenIdentifier>
+			<Abstract type="html">An NSArray of tag strings. See Tagging for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setHeaders:</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of custom MIME headers to the message. For example, Reply-To to specify a Reply-To address.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/headers</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of custom MIME headers to the message. For example, Reply-To to specify a Reply-To address.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/headers</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of custom MIME headers to the message. For example, Reply-To to specify a Reply-To address.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setVariables:</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary for attaching custom JSON data to the message. See Attaching Data to Messages for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *variables</Declaration>
+			
+			
+			<Anchor>//api/name/variables</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/variables</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary for attaching custom JSON data to the message. See Attaching Data to Messages for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *variables</Declaration>
+			
+			
+			<Anchor>//api/name/variables</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/variables</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary for attaching custom JSON data to the message. See Attaching Data to Messages for more information.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *variables</Declaration>
+			
+			
+			<Anchor>//api/name/variables</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setAttachments:</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of attachments to the message.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *attachments</Declaration>
+			
+			
+			<Anchor>//api/name/attachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/attachments</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of attachments to the message.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *attachments</Declaration>
+			
+			
+			<Anchor>//api/name/attachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/attachments</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of attachments to the message.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *attachments</Declaration>
+			
+			
+			<Anchor>//api/name/attachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setInlineAttachments:</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of inline message attachments.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *inlineAttachments</Declaration>
+			
+			
+			<Anchor>//api/name/inlineAttachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/inlineAttachments</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of inline message attachments.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *inlineAttachments</Declaration>
+			
+			
+			<Anchor>//api/name/inlineAttachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/inlineAttachments</TokenIdentifier>
+			<Abstract type="html">NSMutableDictionary of inline message attachments.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableDictionary *inlineAttachments</Declaration>
+			
+			
+			<Anchor>//api/name/inlineAttachments</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setDkim:</TokenIdentifier>
+			<Abstract type="html">Enables/disables DKIM signatures on per-message basis.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *dkim</Declaration>
+			
+			
+			<Anchor>//api/name/dkim</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/dkim</TokenIdentifier>
+			<Abstract type="html">Enables/disables DKIM signatures on per-message basis.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *dkim</Declaration>
+			
+			
+			<Anchor>//api/name/dkim</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/dkim</TokenIdentifier>
+			<Abstract type="html">Enables/disables DKIM signatures on per-message basis.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *dkim</Declaration>
+			
+			
+			<Anchor>//api/name/dkim</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTesting:</TokenIdentifier>
+			<Abstract type="html">Enables sending in test mode. See Sending in Test Mode</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *testing</Declaration>
+			
+			
+			<Anchor>//api/name/testing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/testing</TokenIdentifier>
+			<Abstract type="html">Enables sending in test mode. See Sending in Test Mode</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *testing</Declaration>
+			
+			
+			<Anchor>//api/name/testing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/testing</TokenIdentifier>
+			<Abstract type="html">Enables sending in test mode. See Sending in Test Mode</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *testing</Declaration>
+			
+			
+			<Anchor>//api/name/testing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTracking:</TokenIdentifier>
+			<Abstract type="html">Toggles tracking on a per-message basis, see Tracking Messages for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/tracking</TokenIdentifier>
+			<Abstract type="html">Toggles tracking on a per-message basis, see Tracking Messages for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/tracking</TokenIdentifier>
+			<Abstract type="html">Toggles tracking on a per-message basis, see Tracking Messages for details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTrackOpens:</TokenIdentifier>
+			<Abstract type="html">Toggles opens tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *trackOpens</Declaration>
+			
+			
+			<Anchor>//api/name/trackOpens</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/trackOpens</TokenIdentifier>
+			<Abstract type="html">Toggles opens tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *trackOpens</Declaration>
+			
+			
+			<Anchor>//api/name/trackOpens</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/trackOpens</TokenIdentifier>
+			<Abstract type="html">Toggles opens tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL *trackOpens</Declaration>
+			
+			
+			<Anchor>//api/name/trackOpens</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setDeliverAt:</TokenIdentifier>
+			<Abstract type="html">An NSDate representing the desired time of delivery.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSDate *deliverAt</Declaration>
+			
+			
+			<Anchor>//api/name/deliverAt</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/deliverAt</TokenIdentifier>
+			<Abstract type="html">An NSDate representing the desired time of delivery.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSDate *deliverAt</Declaration>
+			
+			
+			<Anchor>//api/name/deliverAt</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/deliverAt</TokenIdentifier>
+			<Abstract type="html">An NSDate representing the desired time of delivery.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSDate *deliverAt</Declaration>
+			
+			
+			<Anchor>//api/name/deliverAt</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/setTrackClicks:</TokenIdentifier>
+			<Abstract type="html">Toggles clicks tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) ClickTrackingType trackClicks</Declaration>
+			
+			
+			<Anchor>//api/name/trackClicks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/trackClicks</TokenIdentifier>
+			<Abstract type="html">Toggles clicks tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) ClickTrackingType trackClicks</Declaration>
+			
+			
+			<Anchor>//api/name/trackClicks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGMessage/trackClicks</TokenIdentifier>
+			<Abstract type="html">Toggles clicks tracking on a per-message basis. Has higher priority than domain-level setting.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) ClickTrackingType trackClicks</Declaration>
+			
+			
+			<Anchor>//api/name/trackClicks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MGMessage/messageFrom:to:subject:body:</TokenIdentifier>
+			<Abstract type="html">Creates and initializes a message with the provided details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)messageFrom:(NSString *)from to:(NSString *)to subject:(NSString *)subject body:(NSString *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">The message sender. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">The message recipient. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>subject</Name>
+					<Abstract type="html">The message subject. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageFrom:to:subject:body:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/initWithFrom:to:subject:body:</TokenIdentifier>
+			<Abstract type="html">The designated initializer to create a message with the provided details.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrom:(NSString *)from to:(NSString *)to subject:(NSString *)subject body:(NSString *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">The message sender. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">The message recipient. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>subject</Name>
+					<Abstract type="html">The message subject. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithFrom:to:subject:body:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/dictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/dictionary</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addTag:</TokenIdentifier>
+			<Abstract type="html">Adds a single tag to this recevier&apos;s metadata.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTag:(NSString *)tag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">The tag to add to this recevier&apos;s metadata. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTag:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addTags:</TokenIdentifier>
+			<Abstract type="html">Adds multiple tags to the recevier&apos;s metadata.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTags:(NSArray *)tags</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">An NSArray containing the tags to add to this recevier&apos;s metadata. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTags:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addHeader:value:</TokenIdentifier>
+			<Abstract type="html">Adds a header and value to the receiver&apos;s metadata.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addHeader:(NSString *)header value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The header identifier to add. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value for the identifier. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addHeader:value:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addVariable:value:</TokenIdentifier>
+			<Abstract type="html">Adds a variable and a value to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addVariable:(NSString *)var value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>var</Name>
+					<Abstract type="html">The variable name. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value of the variable to display in the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addVariable:value:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addRecipient:</TokenIdentifier>
+			<Abstract type="html">Adds an additional recipient to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRecipient:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient to add to the message. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addRecipient:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addCc:</TokenIdentifier>
+			<Abstract type="html">Adds a CC recipient to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCc:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient to add to the CC field of the message. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCc:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addBcc:</TokenIdentifier>
+			<Abstract type="html">Adds a BCC recipient to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBcc:(NSString *)recipient</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recipient</Name>
+					<Abstract type="html">The recipient to add to the BCC field of the message. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBcc:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addAttachment:withName:type:</TokenIdentifier>
+			<Abstract type="html">Adds an attachment to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAttachment:(NSData *)data withName:(NSString *)name type:(NSString *)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The NSData to be attached to the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name used to identify this attachment in the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The MIME type used to describe the contents of data. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAttachment:withName:type:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addImage:withName:type:</TokenIdentifier>
+			<Abstract type="html">Adds a UIImage as an attachment to the receiver.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addImage:(UIImage *)image withName:(NSString *)name type:(ImageAttachmentType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The UIImage to be attached to the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name used to identify this image attachment in the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The ImageAttachmentType to identify this image as a JPEG or a PNG.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addImage:withName:type:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGMessage/addImage:withName:type:inline:</TokenIdentifier>
+			<Abstract type="html">Adds a UIImage as an attachment to the receiver but inline in the message body.</Abstract>
+			<DeclaredIn>MGMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)addImage:(UIImage *)image withName:(NSString *)name type:(ImageAttachmentType)type inline:(BOOL)inlineAttachment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The UIImage to be attached to the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name used to identify this attachment in the message. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The ImageAttachmentType to identify this image as a JPEG or a PNG.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addImage:withName:type:inline:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+	</File>
+</Tokens>

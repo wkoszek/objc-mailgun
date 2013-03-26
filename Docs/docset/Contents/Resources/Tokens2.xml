@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Mailgun.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Mailgun</TokenIdentifier>
+			<Abstract type="html">The Mailgun SDK allows your Mac OS X or iOS application to connect with the Mailgun programmable email platform. Send and manage mailing list subscriptions from your desktop or mobile applications and connect with your users directly in your application.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/setApiKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value for the HTTP headers set in request objects created by the HTTP client.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The HTTP header to return the default value for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The default value for the HTTP header, or nil if unspecified</Abstract></ReturnValue>
+			<Anchor>//api/name/apiKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/apiKey</TokenIdentifier>
+			<Abstract type="html">Returns the value for the HTTP headers set in request objects created by the HTTP client.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The HTTP header to return the default value for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The default value for the HTTP header, or nil if unspecified</Abstract></ReturnValue>
+			<Anchor>//api/name/apiKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Mailgun/apiKey</TokenIdentifier>
+			<Abstract type="html">Returns the value for the HTTP headers set in request objects created by the HTTP client.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">The HTTP header to return the default value for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The default value for the HTTP header, or nil if unspecified</Abstract></ReturnValue>
+			<Anchor>//api/name/apiKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/setDomain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/domain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Mailgun/domain</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Mailgun/client</TokenIdentifier>
+			<Abstract type="html">Creates and initializes an Mailgun object with the specified.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)client</Declaration>
+			
+			<ReturnValue><Abstract type="html">The newly-initialized Mailgun client</Abstract></ReturnValue>
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Mailgun/clientWithDomain:apiKey:</TokenIdentifier>
+			<Abstract type="html">Creates and initializes an Mailgun object with the domain and api key specified.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)clientWithDomain:(NSString *)domain apiKey:(NSString *)apiKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>domain</Name>
+					<Abstract type="html">The domain for this client. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>apiKey</Name>
+					<Abstract type="html">The API key for your Mailgun account. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized Mailgun client</Abstract></ReturnValue>
+			<Anchor>//api/name/clientWithDomain:apiKey:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/sendMessage:</TokenIdentifier>
+			<Abstract type="html">Sends a previously constructed MGMessage without success or failure blocks.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessage:(MGMessage *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The MGMessage instance to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/sendMessage:success:failure:</TokenIdentifier>
+			<Abstract type="html">Sends a previously constructed MGMessage with the provided success and failure blocks.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessage:(MGMessage *)message success:(void ( ^ ) ( NSString *messageId ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block called when the message is sent successfully called with a parameter NSString of the message id.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block called when the underlying HTTP request fails. It will be called with an NSError set by the underlying AFNetworking client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessage:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/sendMessageTo:from:subject:body:</TokenIdentifier>
+			<Abstract type="html">Sends a simple message without success or failure blocks.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessageTo:(NSString *)to from:(NSString *)from subject:(NSString *)subject body:(NSString *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>to</Name>
+					<Abstract type="html">The message recipient. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>from</Name>
+					<Abstract type="html">The message sender. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>subject</Name>
+					<Abstract type="html">The message subject. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessageTo:from:subject:body:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/sendMessageTo:from:subject:body:success:failure:</TokenIdentifier>
+			<Abstract type="html">Sends a simple message with success or failure blocks.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessageTo:(NSString *)to from:(NSString *)from subject:(NSString *)subject body:(NSString *)body success:(void ( ^ ) ( NSString *messageId ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>to</Name>
+					<Abstract type="html">The message recipient. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>from</Name>
+					<Abstract type="html">The message sender. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>subject</Name>
+					<Abstract type="html">The message subject. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the message.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block called when the message is sent successfully called with a parameter NSString of the message id.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block called when the underlying HTTP request fails. It will be called with an NSError set by the underlying AFNetworking client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessageTo:from:subject:body:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/checkSubscriptionToList:email:success:failure:</TokenIdentifier>
+			<Abstract type="html">Checks if the given email address is a current subscriber to the specified mailing list.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)checkSubscriptionToList:(NSString *)list email:(NSString *)emailAddress success:(void ( ^ ) ( NSDictionary *member ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>list</Name>
+					<Abstract type="html">The mailing list to check for the provided email address. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>emailAddress</Name>
+					<Abstract type="html">Email address to check for list membership. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block called when the email address is found as a subscriber to list, called with a NSDictionary of member information.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block called when the email address is not found as a subscriber to list. The NSError will be an HTTP 404.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/checkSubscriptionToList:email:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/unsubscribeToList:email:success:failure:</TokenIdentifier>
+			<Abstract type="html">Unsubscribes the given email address to the specified mailing list.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)unsubscribeToList:(NSString *)list email:(NSString *)emailAddress success:(void ( ^ ) ( ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>list</Name>
+					<Abstract type="html">The mailing list to unsubscribe the given email address from. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>emailAddress</Name>
+					<Abstract type="html">Email address to check for list membership. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block called when the email address is successfully removed from the mailing list.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block called when the email address is not found as a subscriber to list. The NSError will be an HTTP 404.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unsubscribeToList:email:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Mailgun/subscribeToList:email:success:failure:</TokenIdentifier>
+			<Abstract type="html">Subscribes the given email address to the specified mailing list.</Abstract>
+			<DeclaredIn>Mailgun.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscribeToList:(NSString *)list email:(NSString *)emailAddress success:(void ( ^ ) ( ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>list</Name>
+					<Abstract type="html">The mailing list to subscribe the provided email address to. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>emailAddress</Name>
+					<Abstract type="html">Email address to subscribe. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block called when the email address is successfully subscribed to the mailing list.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block called when there is an error subscribing the user to the given mailing list.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscribeToList:email:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+	</File>
+</Tokens>

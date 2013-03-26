@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/jbaird/Library/Developer/Shared/Documentation/DocSets/com.rackspace.Mailgun-SDK.docset
+Time: 2013-03-26 17:26:59 +0000
