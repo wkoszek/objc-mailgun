@@ -50,7 +50,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
 - (void)buildFormData:(id<AFMultipartFormData>)formData withAttachments:(NSDictionary *)attachments {
     NSUInteger idx = 1;
     [attachments enumerateKeysAndObjectsUsingBlock:^(NSString *filename, NSArray *attachment, BOOL *stop) {
-        NSString *name = [NSString stringWithFormat:@"attachment[%d]", idx];
+        NSString *name = [NSString stringWithFormat:@"attachment[%d]", (unsigned int)idx];
         [formData appendPartWithFileData:attachment[1]
                                     name:name
                                 fileName:filename
