@@ -7,8 +7,8 @@ Easy Image Attaching
  
 Using MGMessage will allow you to attach `UIImage` or `NSImage` instances to a message. It will handle converting the image for you and attaching it either inline or to the message header.
 
-Full SDK Support
-================
+API Support
+===========
 
 At this time the full Mailgun REST API is not supported. Currently support is only provided to send messages, subscribe/unsubscribe from mailing lists and to check mailing lists subscriptions.
 
