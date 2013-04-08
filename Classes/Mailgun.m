@@ -40,7 +40,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
     return self;
 }
 
-- (void)setAPIKey:(NSString *)apiKey {
+- (void)setApiKey:(NSString *)apiKey {
     NSParameterAssert(apiKey);
     [self clearAuthorizationHeader];
     [self setAuthorizationHeaderWithUsername:@"api" password:apiKey];
