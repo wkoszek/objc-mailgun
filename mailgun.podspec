@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Jay Baird" => "jay.baird@rackspace.com" }
   s.source       = { :git => "https://github.com/rackerlabs/objc-mailgun.git", :tag => "1.0.2" }
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.7'
   s.source_files = 'Classes', 'Classes/*.{h,m}'
   s.requires_arc = true
