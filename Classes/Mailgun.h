@@ -75,7 +75,7 @@
  
  */
 
-@interface Mailgun : AFHTTPRequestOperationManager
+@interface Mailgun : AFHTTPSessionManager
 
 ///---------------------------
 /// @name Mailgun Client Setup
