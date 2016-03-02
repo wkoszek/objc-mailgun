@@ -72,7 +72,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
     [self POST:messagePath parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         [weakSelf buildFormData:formData withAttachments:message.attachments];
         [weakSelf buildFormData:formData withAttachments:message.inlineAttachments];
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         if (success) {
             success(responseObject[@"id"]);
@@ -114,7 +114,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
     NSParameterAssert(list);
     NSParameterAssert(emailAddress);
     NSString *messagePath = [NSString stringWithFormat:@"lists/%@/%@/%@", list, @"members", emailAddress];
-    [self GET:messagePath parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [self GET:messagePath parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         if (success) {
             success(responseObject);
         }
@@ -159,7 +159,7 @@ NSString * const kMailgunURL = @"https://api.mailgun.net/v2";
     
     [self POST:messagePath parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         if (success) {
             success();
         }

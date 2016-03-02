@@ -29,7 +29,7 @@ Installation
 Install via Cocoapods - Add:
 
         ```
-        pod 'mailgun', :git => 'git://github.com/KomodoHQ/objc-mailgun', :branch => 'develop'
+        pod 'mailgun', :git => 'git://github.com/KomodoHQ/objc-mailgun'
         ```
 
 to your Podfile.

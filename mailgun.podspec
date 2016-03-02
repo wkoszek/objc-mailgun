@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.source_files = 'Classes', 'Classes/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'AFNetworking', '~> 3.0.0-beta.1'
+  s.dependency 'AFNetworking', '~> 3.0.4'
 end
